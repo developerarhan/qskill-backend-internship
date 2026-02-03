@@ -54,6 +54,37 @@ A robust Django REST API platform for creating and managing events with user reg
 
 ## 📁 Project Structure
 
+event-management-system/
+├── manage.py                    # Django management script
+├── event_management/            # Django project directory
+│   ├── __init__.py
+│   ├── settings.py              # Project settings
+│   ├── urls.py                  # Main URL configuration
+│   ├── wsgi.py
+│   └── asgi.py
+├── accounts/                       # Custom user app
+│   ├── __init__.py
+│   ├── models.py                # Custom User model
+│   ├── serializers.py           # User serializers
+│   ├── views.py                 # Authentication views
+│   ├── urls.py
+│   ├── admin.py
+│   └── migrations/
+├── events/                      # Events app (manages events and registrations)
+│   ├── __init__.py
+│   ├── models.py                # Event and registration models
+│   ├── serializers.py           # Event and registration serializers
+│   ├── views.py                 # Event viewsets
+│   ├── urls.py
+│   ├── permissions.py           # Custom permissions
+│   ├── admin.py
+│   └── migrations/
+├── postman/                     # Postman collection & screenshots
+│   ├── screenshots/             # Postman API testing screenshots
+├── requirements.txt             # Python dependencies
+├── .gitignore
+└── README.md
+
 ## 🚀 Installation
 
 ### Prerequisites
@@ -378,17 +409,18 @@ Content-Type: application/json
 
 ## 📸 Postman Screenshots
 
-Check the `postman/screenshots/` folder for:
-- `1-register-user.png` - User Registration
-- `2-login-user.png` - User Login (JWT tokens)
-- `3-create-event.png` - Create Event
-- `4-list-events.png` - List All Events
-- `5-filter-by-location.png` - Filter Events by Location
-- `6-register-event.png` - Register for Event
-- `7-my-registrations.png` - Get My Registrations
-- `8-cancel-registration.png` - Cancel Registration
-- `9-admin-approve.png` - Admin Approve Event
-- `10-capacity-full-error.png` - Capacity Validation Error
+Check the [`postman/screenshots/`](./postman/screenshots/) folder for:
+
+- [`1-register-user.png`](./postman/screenshots/1-register-user.png) – User Registration  
+- [`2-login-user.png`](./postman/screenshots/2-login-user.png) – User Login (JWT tokens)  
+- [`3-create-event.png`](./postman/screenshots/3-create-event.png) – Create Event  
+- [`4-list-events.png`](./postman/screenshots/4-list-events.png) – List All Events  
+- [`5-filter-by-location.png`](./postman/screenshots/5-filter-by-location.png) – Filter Events by Location  
+- [`6-register-event.png`](./postman/screenshots/6-register-event.png) – Register for Event  
+- [`7-my-registrations.png`](./postman/screenshots/7-my-registrations.png) – Get My Registrations  
+- [`8-cancel-registration.png`](./postman/screenshots/8-cancel-registration.png) – Cancel Registration  
+- [`9-admin-approve.png`](./postman/screenshots/9-admin-approve.png) – Admin Approve Event  
+- [`10-capacity-full-error.png`](./postman/screenshots/10-capacity-full-error.png) – Capacity Validation Error
 
 ## 🐛 Known Issues / Future Improvements
 
