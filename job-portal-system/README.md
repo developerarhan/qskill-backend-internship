@@ -46,7 +46,44 @@ A comprehensive Django REST API for managing job postings and applications where
 ## 📁 Project Structure
 
 ```
-
+job-portal-system/
+├── manage.py                    # Django management script
+├── job_portal/                  # Django project directory
+│   ├── __init__.py
+│   ├── settings.py              # Project settings
+│   ├── urls.py                  # Main URL configuration
+│   ├── wsgi.py
+│   └── asgi.py
+├── accounts/                    # Users app (authentication)
+│   ├── __init__.py
+│   ├── models.py                # Custom User model
+│   ├── serializers.py           # User serializers
+│   ├── views.py                 # Authentication views
+│   ├── urls.py
+│   ├── admin.py
+│   └── migrations/
+├── jobs/                        # Jobs app
+│   ├── __init__.py
+│   ├── models.py                # Job model
+│   ├── serializers.py           # Job serializers
+│   ├── views.py                 # Job views / viewsets
+│   ├── urls.py                  # Job URLs
+│   ├── admin.py                 # Django admin configuration
+│   └── migrations/
+├── applications/                # Applications app
+│   ├── __init__.py
+│   ├── models.py                # Application model
+│   ├── serializers.py           # Application serializers
+│   ├── views.py                 # Application views / viewsets
+│   ├── urls.py                  # Application URLs
+│   ├── admin.py
+│   └── migrations/
+├── postman/                     # Postman collection & screenshots
+│   └── screenshots/             # Postman API testing screenshots
+├── requirements.txt             # Python dependencies
+├── .env.example                 # Example environment variables
+├── .gitignore
+└── README.md
 ```
 
 ## 🚀 Installation
@@ -271,13 +308,14 @@ DELETE /api/applications/1/
 
 ## 📸 Postman Screenshots
 
-Check the `postman/screenshots/` folder for:
-- `1-create-job.png` - Create Job API
-- `2-list-jobs.png` - List All Jobs API
-- `3-search-jobs.png` - Search Job API
-- `4-apply-job.png` - Apply for Job API
-- `5-list-applications.png` - List Applications API
-- `6-delete-application.png` - Delete Application API
+Check the [`postman/screenshots/`](./postman/screenshots/) folder for:
+
+- [`1-create-job.png`](./postman/screenshots/create-job.png) – Create Job API  
+- [`2-list-jobs.png`](./postman/screenshots/list-jobs.png) – List All Jobs API  
+- [`3-search-jobs.png`](./postman/screenshots/search-jobs.png) – Search Job API  
+- [`4-apply-job.png`](./postman/screenshots/apply-job.png) – Apply for Job API  
+- [`5-list-applications.png`](./postman/screenshots/list-applications.png) – List Applications API  
+- [`6-delete-application.png`](./postman/screenshots/delete-application.png) – Delete Application API
 
 ## 🐛 Known Issues / Future Improvements
 
