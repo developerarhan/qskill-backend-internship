@@ -18,14 +18,17 @@ qskill-backend-internship/
 │   ├── job_portal/            # Django project directory
 │   ├── jobs/                  # Jobs app
 │   ├── applications/          # Applications app
+│   ├── accounts/              # Users app (authentication)
+│   ├── postman/               # Postman collection & screenshots
 │   └── requirements.txt       # Python dependencies
 │
 ├── event-management-system/    # Task 2: Event Management System
 │   ├── README.md              # Detailed documentation for Event Management
 │   ├── manage.py              # Django management script
 │   ├── event_management/      # Django project directory
-│   ├── accounts/              #  Accounts app (authentication)
-│   ├── events/                # Events app 
+│   ├── events/                # Events app (manages events and registrations)
+│   ├── accounts/              # Users app (authentication)
+│   ├── postman/               # Postman collection & screenshots
 │   └── requirements.txt       # Python dependencies
 │
 └── README.md                   # This file (main overview)
@@ -82,7 +85,10 @@ cd event-management-system
 
 ## 📸 API Testing
 
-All APIs have been thoroughly tested using Postman. Screenshots and collections are available in each project's README.md .
+All APIs have been thoroughly tested using Postman. The collections and screenshots for each project are available here:
+
+- **Job Portal System:** [`postman/`](./job-portal-system/postman/)
+- **Event Management System:** [`postman/`](./event-management-system/postman/)
 
 ## 🛠️ Technologies Used
 
