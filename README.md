@@ -85,7 +85,7 @@ cd event-management-system
 
 ## 📸 API Testing
 
-All APIs have been thoroughly tested using Postman. The collections and screenshots for each project are available here:
+All APIs have been thoroughly tested using Postman. The Postman API testing screenshots for each project are available here:
 
 - **Job Portal System:** [`postman/`](./job-portal-system/postman/)
 - **Event Management System:** [`postman/`](./event-management-system/postman/)
